@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="shop">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" media="screen"/>
+    <script src="{{ url_for('static', filename='js/lib/bootstrap.min.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+      {% block body %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
